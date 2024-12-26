@@ -8,7 +8,7 @@
     </head>
     <body>
         <h1>Training Plan</h1>
-        <center><p> Yulin-Xi'an-Photak Marathon Series</p></center>
+        <center><p>Chula, Wuhan, Baoji, Kota-Kinabalu and Yala</p></center>
 
         <nav>
             <ul>
@@ -20,7 +20,53 @@
             </ul>
         </nav> 
 
+        <h2>Training Plan</h2>
+        <button onclick="toggleVisibility()"><h3>February 2 2025 วิ่งสร้างเมือง 10K</h3></button>
+        <div id="training-plan" style="display: none;">
+            <h4>Build</h4>
+            <li><b>Thursday January 16</b>: 45m easy</li>
+            <li><b>Friday January 17</b>: 4x800 PMP (3.2k); strength</li>
+            <li><b>Saturday January 18</b>: easy swim; strength</li>
+            <li><b>Sunday January 19</b>: 1h long run</li>
+            <li><b>Monday January 20</b>: rest</li>
+            <li><b>Tuesday January 21</b>: 45m easy; easy swim</li>
+            <li><b>Wednesday January 22</b>: 10x100 (1k); strength</li>
+            <li><b>Thursday January 23</b>: 45m easy; easy swim</li>
+            <li><b>Friday January 24</b>: 5x800 PMP (4k); strength</li>
+            <li><b>Saturday January 25</b>: easy swim; strength</li>
+            <li><b>Sunday January 26</b>: 1h long run</li>
+            <li><b>Monday January 27</b>: rest</li>
+            <li><b>Tuesday January 28</b>: 45m easy; easy swim</li>
+            <li><b>Wednesday January 29</b>: 10x100 (1k); strength</li>
+            <li><b>Thursday January 30</b>: 45m easy; easy swim</li>
+            <h4>Taper</h4>
+            <li><b>Friday January 31</b>: 3x800 PMP (2.4k)</li>
+            <li><b>Saturday February 1</b>: rest</li>
+            <h4>Race Day วิ่งสร้างเมือง 10K</h4>
+            <li><b>Sunday February 2</b>: วิ่งสร้างเมือง 10K</li>
+            <h4>Recovery</h4>
+            <li><b>Monday February 3</b>: rest</li>
+            <li><b>Tuesday February 4</b>: 30m easy</li>
+            <li><b>Wednesday February 5</b>: easy swim</li>
+            <li><b>Thursday February 6</b>: 30m easy</li>
+        </div>
+
+        <p>Wuhan Half Marathon</p>
+        <p>Baoji Marathon</p>
+        <p>Kota-Kinabalu 10k</p>
+        <p>Yala Marathon</p>
+
 
     <script src="scripts/main.js"></script>
+    <script>
+    function toggleVisibility() {
+        var plan = document.getElementById("training-plan");
+        if (plan.style.display === "none") {
+            plan.style.display = "block";
+        } else {
+            plan.style.display = "none";
+        }
+    }
+    </script>
     </body>
 </html>
